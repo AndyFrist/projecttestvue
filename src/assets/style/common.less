@@ -1,0 +1,354 @@
+body {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.mu-input-content{
+  border: 2px solid #DDDDDD;
+  background: none;
+  border-radius: 8px;
+  height: 40px;
+  padding-left: 1vw;
+}
+.mu-input-content.active{
+  border: 2px solid red;
+  background: none;
+  border-radius: 8px;
+  height: 40px;
+  padding-left: 1vw;
+}
+
+.green-btn {
+  border: none;
+  font-size: 16px;
+  color: white;
+  background-color: @blue;
+  box-shadow: 0 6px 18px rgba(00, 211, 104, 0.5);
+}
+
+.green-sbtn {
+  font-size: 16px;
+  color: #00B95E;
+  border: 1px solid #00B95E;
+  opacity: 1;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.line-through {
+  text-decoration: line-through;
+}
+
+.align-left {
+  text-align: left;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.align-center {
+  text-align: center;
+}
+
+/*带有fixed navbar的容器，需要一个padding*/
+.navbar-con {
+  padding-top: 46px;
+}
+
+.padding59 {
+  padding-top: 59px;
+}
+
+.navbar-con-16 {
+  padding-top: 62px;
+}
+
+.top-mar-16 {
+  margin-top: 16px;
+}
+
+.flex {
+  display: flex;
+}
+
+.padding10 {
+  padding: 10px;
+}
+
+.margin10 {
+  margin: 10px;
+}
+
+/*简单的卡片样式*/
+.card-box {
+  margin: 10px 0;
+  background-color: white;
+}
+
+.card-box:active {
+  background-color: #fafafa;
+}
+
+.white-click {
+  background-color: white;
+}
+
+.white-click:active {
+  background-color: #fafafa;
+}
+
+/*左右布局*/
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  padding: 4px 0;
+}
+
+.left-red-line {
+  border-left: solid @blue 3px;
+  padding-left: 3px;
+  background-color: white;
+}
+
+.white-txt {
+  color: #ffffff;
+}
+
+.red-txt {
+  color: @blue;
+}
+
+.bold-txt {
+  font-weight: bold;
+}
+
+.gray-txt {
+  color: #969799;
+}
+
+.green-txt {
+  color: @blue;
+}
+
+.style-btn {
+  border: none;
+  background-image: linear-gradient(131deg, #FFAF04 0%, #FF5F04 100%);
+}
+
+.mu-input__focus {
+  color: @blue;
+}
+
+.shadow-box {
+  -webkit-box-shadow: 0 0 12px #ebedf0;
+  box-shadow: 0 0 12px #ebedf0;
+}
+
+.mu-option.is-selected .mu-item {
+  color: @blue;
+}
+
+.white-back {
+  background-color: white;
+}
+
+.mu-dialog-height {
+  height: 100% !important;
+  max-height: 100% !important;
+}
+
+.mu-dialog-height > div {
+  height: 100% !important;
+  max-height: 100% !important;
+}
+
+.mu-input-focus-line {
+  height: 0px;
+}
+.mu-input-line {
+  height: 0px;
+}
+.mu-input-line.disabled {
+  border-bottom: 0px solid rgba(0, 0, 0, 0.13);
+}
+
+.navbar-con-height {
+  height: 46px;
+}
+
+.van-nav-bar {
+  .van-nav-bar__title {
+    font-weight: bold;
+  }
+  .van-nav-bar__text {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  z-index: 100;
+  height: 59px;
+}
+
+.udagree-pop {
+  width: 100vw;
+  height: 100vh;
+  overflow-y: hidden;
+}
+
+.full-dialog-style {
+  width: 100vw;
+  height: 100vh;
+  overflow-y: hidden;
+}
+
+.group_check_customer_style {
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+}
+
+.checkbox_customer_style {
+  justify-content: center;
+  min-width: 40%;
+  margin-top: 10px;
+  font-size: 13px;
+  margin-left: 10px;
+  height: 42px;
+  border-radius: 8px;
+  padding-left: 10px;
+  padding-right: 10px;
+
+}
+
+.checkbox_customer_style .van-icon {
+  display: none;
+}
+
+.checkbox_customer_style .van-radio__label--left {
+  margin: 0 0 0 0;
+}
+
+.checked_customer_style {
+  background: #00B95E;
+}
+
+.checked_customer_style .van-radio__label {
+  color: #ffffff !important;
+  margin: 0 0 0 0;
+}
+
+.unchecked_customer_style {
+  border: 1px solid #999;
+  background: #fff;
+}
+
+.unchecked_customer_style .van-radio__label {
+  color: #999999 !important;
+  margin: 0 0 0 0;
+}
+
+.sub_title_customer_style {
+  padding: 7px 0 0 12px;
+  color: #666666;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.com_nav_bg_style {
+  //统一蓝色渐变标题
+  //background: -webkit-gradient(linear, 0 0, 100% 0, from(#2E5AFE), color-stop(50%, #2F5BFE), color-stop(75%, #5384FC), color-stop(100%, #5485FC));
+  background: @blue;
+  color: white !important;
+}
+
+.nav_bg_style {
+  background: @blue;
+  color: white !important;
+}
+
+.read-tips-splash .van-checkbox__icon .van-icon {
+  border: 2px solid @blue !important;
+}
+
+.required-input .mu-input-label:after {
+  content: '*';
+  color: #ff142a;
+  font-weight: bold;
+}
+
+.option .mu-input-label:after {
+  content: '';
+  color: #ff142a;
+  font-weight: bold;
+}
+
+.required-text:after {
+  content: '*';
+  color: #ff142a;
+  font-weight: bold;
+}
+
+
+.spanish_tog {
+  background: #98998b;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  padding: 1px 6px;
+}
+
+.spanish_tog_active {
+  background: @blue;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  padding: 1px 6px;
+}
+
+.english_tog {
+  background: #98998b;
+  border-bottom-right-radius: 3px;
+  border-top-right-radius: 3px;
+  padding: 1px 6px;
+}
+
+
+.english_tog_active {
+  background: @blue;
+  border-bottom-right-radius: 3px;
+  border-top-right-radius: 3px;
+  padding: 1px 6px;
+
+}
+
+//启动页上的自定义CheckBox 图标样式
+.read-tips-splash .van-checkbox__label {
+  display: flex !important;
+  flex-direction: row !important;
+  margin-left: 8px;
+  align-items: center;
+  color: #323233;
+  line-height: 20px;
+}
+
+.read-tips-splash .img-icon {
+  height: 28px;
+  margin-right: 8px;
+}
+.read-tips-splash .van-checkbox__icon .van-icon{
+  display: none;
+  border: 2px solid #134BA399 !important;
+}
+
+.check_div .van-checkbox__label{
+    margin-left: 8px;
+    color: #999999;
+    line-height: 20px;
+  }
+
+.area-pop {
+  height: 80%;
+}
