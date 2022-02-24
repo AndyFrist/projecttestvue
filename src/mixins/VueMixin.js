@@ -1,5 +1,10 @@
 export default {
   methods:{
+    // 路由回退或者历史回退
+    _routerBack() {
+      this.$router ? this.$router.back() : window.history.back();
+    },
+
     _routeReplace(toName, params) {
       this.$router.replace({
         name: toName,

@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-    <div class="common-title">back</div>
+    <div @click="back" class="common_title" >back</div>
     SecondPage
   </div>
 </template>
@@ -11,6 +11,15 @@ export default {
   data () {
     return {
       msg: 'Welcome to Your Vue.js App'
+    }
+  },
+  mounted () {
+    console.log('secondpage');
+  },
+  methods:{
+    back(){
+      console.log('back')
+      this._routerBack();
     }
   }
 }

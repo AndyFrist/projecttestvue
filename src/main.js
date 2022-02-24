@@ -4,9 +4,14 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import VueMixin from './mixins/VueMixin'
-// import './assets/style/common.less'
+import './assets/style/common.less'
+import Vant , {Lazyload, Locale}from 'vant'
 
-// Vue.mixin(VueMixin)
+import 'vant/lib/index.less'
+import 'vant/lib/icon/local.less';
+
+Vue.use(Vant);
+Vue.mixin(VueMixin)
 
 Vue.config.productionTip = false
 
