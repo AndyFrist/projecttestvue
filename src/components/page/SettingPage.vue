@@ -3,22 +3,22 @@
     {{msg}}
 
     <van-button type="info" size="normal" round @click="jump">
-      099999
+      back
     </van-button>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'HelloWorld',
+  name: 'SettingPage',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App '
+      msg: 'Welcome SettingPage '
     }
   },
   methods:{
     jump(){
-      this._routePush('SecondPage');
+      this._routerBack();
 
     },
   }
@@ -33,7 +33,7 @@ export default {
   text-align: center;
   width: 100%;
   height: 100vh;
-  background-color: #42b983;
+  background-color: #f2b983;
   display: flex;
   flex-direction: column;
   justify-content: center;
